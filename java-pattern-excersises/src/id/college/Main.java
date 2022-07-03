@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // squareEmptySpaceInCenterPattern(8);
         // xPattern(10);
+        alphaRightTriangle(6);
     }
 
     public static void squareEmptySpaceInCenterPattern(int n) {
@@ -77,6 +78,23 @@ public class Main {
                     System.out.print("   ");
                 }
                 k++;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void alphaRightTriangle(int n) {
+        int alpha = 65;
+        for(int i = 1; i <= n; i++) {
+            int k = 0;
+            for(int j = 0; j < n; j++) {
+                if(j >= n - i) {
+                    System.out.print((char)(alpha+k) + "  ");
+                    k++;
+                }
+                else  {
+                    System.out.print(" " + "  ");
+                }
             }
             System.out.println();
         }
