@@ -84,6 +84,18 @@ public class Main {
     }
 
     public static void alphaRightTriangle(int n) {
+        /*------------------------------------------------------------------------------------------------------------
+         * alphaRightTriangle(n)
+         * -----------------------------------------------------------------------------------------------------------
+         * I → n, jumlah pola n yang ingin dibentuk
+         * O →
+         * Ket → Fungsi ini digunakan membuat pola alphabet rata kanan
+         *                      A
+         *                   A  B
+         *                A  B  C
+         *             A  B  C  D
+         *          A  B  C  D  E
+         * -----------------------------------------------------------------------------------------------------------*/
         int alpha = 65;
         for(int i = 1; i <= n; i++) {
             int k = 0;
